@@ -11,47 +11,116 @@
     <div class="header">
       <nav class="navbar">
         <div class="navbar__logo">
-          <i class='bx bx-menu' id="toggle"></i>
+          <i class='bx bx-menu' id="toggle" onclick='ShowSidebar(toggle)'></i>
           <span>Protm</span>
         </div>
         <div class="search">
           <input type="search" placeholder="Search..."/>
           <button><i class='bx bx-search'></i></button>
         </div>
-        <div class="other">account</div>
+        <div class="other"></div>
       </nav>
     </div>
-    <div class="sidebar" id="sidebar">
+    <section class="sidebar" id="sidebar">
       <div class="sidebar__content">
         <div class="sidebar__lists">
-          <a class="sidebar__list">
-            <i></i>
-            <span>home</span>
-          </a>
-          <a class="sidebar__list">
-            <i></i>
-            <span>home</span>
-          </a>
-          <a class="sidebar__list">
-            <i></i>
-            <span>home</span>
-          </a>
-          <a class="sidebar__list">
-            <i></i>
-            <span>home</span>
-          </a>
+          <div class="sidebar__list active">
+            <i class='bx bx-home-alt-2'></i>
+            <span>Home</span>
+          </div>
+          <div class="sidebar__list">
+            <i class='bx bx-home-alt-2'></i>
+            <span>All Orders</span>
+          </div>
+          <div class="sidebar__list">
+            <i class='bx bx-home-alt-2'></i>
+            <span>Trending</span>
+          </div>
+          <div class="sidebar__list">
+            <i class='bx bx-home-alt-2'></i>
+            <span>Categories<span>
+          </div>
         </div>
         <div class="sidebar__bottom">
-          <a class="sidebar__list">
-            <i></i>
+          <div class="sidebar__list">
+            <i class='bx bx-home-alt-2'></i>
             <span>home</span>
-          </a>
-          <a class="sidebar__list">
-            <i></i>
+          </div>
+          <div class="sidebar__list">
+            <i class='bx bx-home-alt-2'></i>
             <span>home</span>
-          </a>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
+    <!----------------------------------------------carousel------------------------------------------->
+    <section class="slider">
+          <div class="slider__container">
+          <div class="slider">
+            <div class="slider__item active">
+              <img src="img/Muscletech-Mini-Banner-Deals-40.jpg" alt="">
+              <div class="content">
+                <h1></h1>
+              </div>
+            </div>
+            <div class="slider__item">l</div>
+            <div class="slider__item">k</div>
+          </div>
+            <div class="slider__navigation">
+              <span class="nav__btn  nav_active"></span>
+              <span class="nav__btn"></span>
+            </div>
+          </div>
+    </section>
+    <section class="categories">
+            <div class="categories__container">
+              <div class="categories__title">
+                <h1>Top Categories</h1>
+                <button>View all</button>
+              </div>
+              <div class="grid__container">
+                  <div class="items purp">
+                    <div class="left">
+                      <h1>Whey Protein</h1>
+          
+                    </div>
+                    <div class="right">
+                      <img src="img/6487d36b1289ae5048245efc-gnc-pro-performance-100-percent-whey-removebg-preview.png" alt="">
+                    </div>
+                  </div>
+                  <div class="items green">
+                    <div class="left">
+                      <h1>creatine</h1>
+                 
+                    </div>
+                    <div class="right">
+                      <img src="img/muscletech-stack-platinum-100-creatine-removebg-preview.png" alt="">
+                    </div>
+                  </div>
+                  <div class="items viol">
+                    <div class="left">
+                      <h1>Mass Gainers</h1>
+             
+                    </div>
+                    <div class="right">
+                      <img src="img/muscletech-masstech-extreme-2000-removebg-preview.png" alt="">
+                    </div>
+                  </div>
+                  <div class="items purp">
+                    <div class="left">
+                      <h1>Whey Protein</h1>
+              
+                    </div>
+                    <div class="right">
+                      <img src="img/6487d36b1289ae5048245efc-gnc-pro-performance-100-percent-whey-removebg-preview.png" alt="">
+                    </div>
+                  </div>
+               
+                  
+                  </div>
+                  
+    </section>
+
+    <script src="script.js"></script>
   </body>
 </html>
