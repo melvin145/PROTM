@@ -10,7 +10,7 @@
 
 :root{
       --font-sm:.8rem;
-      --font-md:1rem;
+      --font-md:1.3rem;
       --font-lrg:1.5rem;
       --font-xl:3rem;
       --primary:#FFFF;
@@ -175,12 +175,12 @@ body{
 
 /**************************************carousel****************************************************/
 .slider{
-      height: 90vh;
+      height: 100vh;
       padding: 2rem 1rem;
 }
 .slider__container{
       position: relative;
-      max-width: 98%;
+      max-width: 100%;
       display: flex;
       justify-content: center;
       margin:auto;
@@ -190,7 +190,7 @@ body{
 }
 .slider__item{
       width: 100%;
-      height: 95%;
+      height: 100%;
       position: absolute;
       top:0;
       left: 0;
@@ -233,6 +233,7 @@ body{
 .categories{
       width: 100%;
       min-height: 50vh;
+      margin-top: 3rem;
 }
 .categories__container{
       max-width: 95%;
@@ -291,19 +292,9 @@ body{
       transform: rotate(0deg);
 }
 .right img{
-      transform: rotate(-15deg);
+      transform: rotate(-10deg);
       transition: all .3s ease-in;
 }
-
-
-
-
-
-
-
-
-
-
 .purp{
       background: linear-gradient(to right, #3D73EB, #DE8FFF);
 }
@@ -316,8 +307,14 @@ body{
 .s{
       background: linear-gradient(to right, #06beb6, #48b1bf);
 }
-.v{
-      background: linear-gradient(to right, #6190e8, #a7bfe8);
+.pink{
+      background: linear-gradient(to right, #FEC7DD, #F52D69);
+}
+.brown{
+      background: linear-gradient(to right, #2B2B2B, #5E2E2E); 
+}
+.yel{
+      background:linear-gradient(to right,#94EDFA,#6B57F5);
 }
 .items img{
       width: 100%;
@@ -330,4 +327,127 @@ body{
             grid-template-columns: repeat(2,1fr);
             gap: .5rem;
       }   
+}
+@media screen and (min-width:1400px){
+      .items .left h1{
+            text-transform: uppercase;
+            font-size: 1.8rem;
+            width: 100%;
+            color: var(--primary);
+      }
+}
+
+.product{
+      width: 100%;
+     
+      margin-top: 3rem;
+}
+.product__container{
+      max-width: 95%;
+      margin: auto;
+      width: 100%;
+}
+.trending__container{
+      display: grid;
+      grid-template-columns: repeat(5,2fr);
+      gap: .5rem;
+      
+}
+.popular__container{
+      display: grid;
+      grid-template-columns:repeat(5,2fr);
+      gap:.5rem;
+}
+.card{
+      background-color: #2f2b3a;
+      max-width: 300px;
+      width: 100%;
+      aspect-ratio: 9/12;
+      border-radius: 10px;
+      padding: 15px;
+}
+
+.card__img{
+      max-width: 100%;
+      width: 100%;
+      height: 60%;
+      margin: auto;
+      object-fit: cover;
+      background-color:#ffffff;
+      text-align: center;
+      border-radius: 3px;
+      
+}
+.card__img img{
+      object-fit: cover;
+}
+.card__details h1{
+      font-size: var(--font-md); 
+      width: 90%;    
+}
+.card__details span{
+      font-size: .9rem;
+      color: #8a8a8a;
+}
+.card__details{
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+}
+.card__details p{
+      margin-top: 10px;
+      font-size: var(--font-md);
+      color: #e3e3e3;
+}
+.card__bottom {
+      display: flex;
+      justify-content: space-between;
+}
+.card__bottom a{
+      font-size: 2.5rem;
+      font-weight: 500;
+      color: #7a5af5;
+}
+@media screen and (max-width:450px){
+   
+:root{
+      --font-sm:.8rem;
+      --font-md:1rem;
+      --font-lrg:1.2rem;
+      --font-xl:3rem;
+      --primary:#FFFF;
+      --secondary:#e1e1e1;
+      --button:#131313;
+      --navbar-height:70px;
+}
+.slider{
+      height: 30vh;
+      padding: 2rem 1rem;
+}
+      .grid__container{
+            display: grid;
+            margin-top: 10px;
+            grid-template-columns: repeat(2,1fr);
+            gap: .5rem;
+      }   
+      .trending__container{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: .5rem;
+            
+      }
+      .popular__container{
+            display: grid;
+            grid-template-columns:repeat(2,1fr);
+            gap:.5rem;
+      }
+      .items .left h1{
+            text-transform: uppercase;
+            font-size: .8rem;
+            width: 100%;
+            color: var(--primary);
+      }
+
+      
 }
