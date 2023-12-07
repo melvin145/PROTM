@@ -349,14 +349,14 @@ body{
 }
 .trending__container{
       display: grid;
-      grid-template-columns: repeat(5,2fr);
-      gap: .5rem;
+      grid-template-columns: repeat(4,2fr);
+      gap: 1rem;
       
 }
 .popular__container{
       display: grid;
-      grid-template-columns:repeat(5,2fr);
-      gap:.5rem;
+      grid-template-columns:repeat(4,2fr);
+      gap:1.6rem;
 }
 .card{
       background-color: #2f2b3a;
