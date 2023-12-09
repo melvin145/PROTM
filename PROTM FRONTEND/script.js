@@ -22,3 +22,8 @@ navbtn.forEach((nav,i)=>{
             ShowSlide(i);
       })
 })
+
+function setActive(){
+      const fav=document.getElementById('fav');
+      fav.classList.toggle('btn_active');
+}
